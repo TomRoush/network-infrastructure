@@ -1,0 +1,10 @@
+Setup:
+  Basic Setup:
+    Network Setup:
+      Local IP Address: 192.168.1.3/16
+Wireless:
+  Basic Settings:
+    2.4 GHz:
+      Wireless Mode: AP
+    5 GHz:
+      Wireless Mode: Repeater Bridge

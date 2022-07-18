@@ -1,0 +1,12 @@
+Wireless:
+  Basic Settings:
+    Wireless Interface wlan0 [2.4 GHz] - AR922X 802.11n:
+      Wireless Network Mode: Mixed
+      Wireless Channel: 11 - 2462 MHz
+      Channel Width: Dynamic (20/40 MHz)
+      Extension Channel: Lower
+    Wireless Interface wlan1 [5 GHz] - AR922X 802.11n:
+      Wireless Network Mode: Mixed
+      Wireless Channel: 149 - 5745 MHz
+      Channel Width: Dynamic (20/40 MHz)
+      Extension Channel: Upper

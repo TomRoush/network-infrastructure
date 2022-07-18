@@ -1,0 +1,97 @@
+Setup:
+  Basic Setup:
+    WAN Setup:
+      WAN Connection Type:
+        Ignore WAN DNS: T
+    Network Setup:
+      Router IP:
+        Local IP Address: 192.168.1.1/16
+      Network Address Server Settings (DHCP):
+        Start IP Address: 192.168.1.2
+        Maximum DHCP Users: 254
+        Static DNS 1: 192.168.1.9
+        Static DNS 2: 8.8.8.8
+        Static DNS 3: 8.8.4.4
+  DDNS:
+    Dynamic Domain Name System (DDNS):
+      DDNS:
+        DDNS Service: Custom
+        DYNDNS Server: dynamicdns.park-your-domain.com
+        Username: ${ddnsDomain}
+        Password: ${ddnsPassword}
+        Hostname: "@"
+        URL: /update?domain=${ddnsDomain}&password=${ddnsPassword}&host=
+Services:
+  Services:
+    Services Management:
+      DHCP Server:
+        Used Domain: LAN & WLAN
+        LAN Domain: ${lanDomain}
+        Static Leases: |
+          ${static-leases.txt}
+      Dnsmasq:
+        No DNS Rebind: Enable
+        Query DNS in Strict Order: Enable
+        Additional Dnsmasq Options: |
+          interface=tun2
+          ${local-dns.txt}
+  VPN:
+    OpenVPN Server/Daemon:
+      OpenVPN Server/Daemon:
+        OpenVPN: Enable
+        CVE-2019-14899 Mitigation: Disable
+        Start Type: WAN Up
+        Config as: GUI(server)
+        Network: 192.168.2.0
+        Netmask: 255.255.255.0
+        Tunnel Protocol: udp
+        Encryption Cipher: CHACHA20-POLY1305
+        Hash Algorithm: Not set
+        First Data Cipher: CHACHA20-POLY1305
+        Second Data Cipher: AES128-GCM
+        Third Data Cipher: AES-256-GCM
+        Advanced Options: Enable
+        Compression: Disabled
+        Push Client Router: Default Gateway
+        Allow Client to Client: Enable
+        Allow duplicate Clients: Enable
+        Allow Clients WAN access (internet): Enable
+        Allow Clients full LAN access: Enable
+        Tunnel MTU setting: 1400
+        Use ECDH instead of DH.PEM: Enable
+        Public Server Cert: |
+          ${vpnPublicServerCert}
+        CA Cert: |
+          ${vpnCACert}
+        Private Server Key: |
+          ${vpnPrivateServerKey}
+        Additional Config: |
+          verb 5
+          push "dhcp-option DNS 192.168.1.1"
+          push "dhcp-option DOMAIN ${lanDomain}"
+Security:
+  Firewall:
+    Security:
+      Additional Filters:
+        Filter Proxy: T
+        Filter Cookies: T
+        Filter Java Applets: T
+        Filter ActiveX: T
+        Filter ToS / DSCP: T
+        ARP Spoofing Protection: T
+      Block WAN Requests:
+        Block Anonymous WAN Requests (ping): T
+        Filter Multicast: T
+        Filter IDENT (Port 113): T
+        Block WAN SNMP access: T
+      Impede WAN DoS/Bruteforce:
+        Limit SSH Access: T
+        Limit Telnet Access: T
+        Limit PPTP Access: T
+        Limit FTP Access: T
+  VPN Passthrough:
+    Virtual Private Network (VPN):
+      VPN Passthrough:
+        IPSec Passthrough: Disable
+        PPTP Passthrough: Disable
+        L2TP Passthrough: Disable

@@ -1,0 +1,48 @@
+Setup:
+  Basic Setup:
+    WAN Setup:
+      Optional Settings:
+        Router Name: ${deviceName}
+    Network Setup:
+      Time Settings:
+        Time Zone: US/Central
+Wireless:
+  Basic Settings:
+    2.4 GHz:
+      Wireless Network Name (SSID): ${24gSSID}
+    5 GHz:
+      Wireless Network Name (SSID): ${5gSSID}
+  Wireless Security:
+    Wireless Security *:
+      Physical Interface *:
+        Security Mode: WPA2-PSK
+        WPA Algorithms: CCMP-128 (AES)
+        WPA Shared Key: ${wpaKey}
+Services:
+  Services:
+    Services Management:
+      Telnet:
+        Telnet: Disable
+      WAN Traffic Counter:
+        ttraff Daemon: Enable
+NAT / QoS:
+  UPnP:
+    UPnP Configuration:
+      UPnP Service: Disable
+Administation:
+  Management:
+    Router Management:
+      Router Password:
+        Router Username: ${routerUsername}
+        Router Password: ${routerPassword}
+        Re-enter to confirm: ${routerPassword}
+      Web Access:
+        Protocol:
+          HTTP: F
+          HTTPS: T
+      Boot Wait:
+        Boot Wait: Enable
+      Router GUI Style:
+        Use Dark Styles: Enable
+      Show new Features:
+        Display new Features: Disable

@@ -1,0 +1,25 @@
+Wireless:
+  Basic Settings:
+    Wireless Interface wl0 [2.4 GHz TurboQAM]:
+      Wireless Network Mode: Mixed
+      Wireless Channel: 1 - 2.412 GHz
+      Channel Width: Wide HT40 (40 MHz)
+      Extension Channel: upper
+    Wireless Interface wl1 [5 GHz/802.11ac]:
+      Wireless Network Mode: Mixed
+Administration:
+  Commands:
+    Diagnostics:
+      Command Shell:
+        Startup: |
+          sleep 10
+          gpio enable 2
+          gpio enable 3
+          gpio enable 8
+          gpio enable 9
+          gpio enable 12
+          gpio enable 13
+          gpio enable 17
+          gpio enable 18
+          gpio disable 14
+          gpio disable 15

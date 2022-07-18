@@ -1,0 +1,23 @@
+Setup:
+  Basic Setup:
+    WAN Setup:
+      WAN Connection Type: Disabled
+    Network Setup:
+      Local IP Address: 192.168.1.4/16
+      Gateway: 192.168.1.1
+  Advanced Routing:
+    Advanced Routing:
+      Operating Mode:
+        Operating Mode: Router
+Wireless:
+  Basic Settings:
+    2.4 GHz:
+      Wireless Mode: AP
+    5 GHz:
+      Wireless Mode: AP
+Services:
+  Services:
+    Services Management:
+      Dnsmasq:
+        Dnsmasq: Disable
+    

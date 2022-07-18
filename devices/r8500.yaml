@@ -1,0 +1,18 @@
+# Flash stock, flash dd-wrt, reboot, proceed. DO NOT RESET SETTINGS!
+Wireless:
+  Basic Settings:
+    Wireless Interface wl0 [5 GHz/802.11ac]:
+      Wireless Network Mode: AC/N-Mixed
+      Wireless Channel: 161 - 5.805 GHz
+      Channel Width: VHT80 (80 MHz)
+      Extension Channel: upper upper
+    Wireless Interface wl1 [2.4 GHz TurboQAM]:
+      Wireless Network Mode: Mixed
+      Wireless Channel: 6 - 2.437 GHz
+      Channel Width: Wide HT40 (40 MHz)
+      Extension Channel: upper
+    Wireless Interface wl2 [5 GHz/802.11ac]:
+      Wireless Network Mode: AC/N-Mixed
+      Wireless Channel: 40 - 5.200 GHz
+      Channel Width: Wide HT40 (40 MHz)
+      Extension Channel: Lower
