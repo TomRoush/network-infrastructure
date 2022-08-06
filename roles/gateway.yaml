@@ -21,6 +21,13 @@ Setup:
         Password: ${ddnsPassword}
         Hostname: "@"
         URL: /update?domain=${ddnsDomain}&password=${ddnsPassword}&host=
+Wireless:
+  Basic Settings:
+    5 GHz:
+      Virtual Interfaces:
+        Wireless Interface [5 GHz/802.11ac]:
+          Service Set Identifier (SSID): ${5gSSID}-Backhaul
+          SSID Broadcast: Disable
 Services:
   Services:
     Services Management:

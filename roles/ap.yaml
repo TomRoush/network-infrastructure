@@ -3,8 +3,9 @@ Setup:
     WAN Setup:
       WAN Connection Type: Disabled
     Network Setup:
-      Local IP Address: 192.168.1.4/16
-      Gateway: 192.168.1.1
+      Router IP:
+        Local IP Address: 192.168.1.4/16
+        Gateway: 192.168.1.1
   Advanced Routing:
     Advanced Routing:
       Operating Mode:
@@ -12,9 +13,9 @@ Setup:
 Wireless:
   Basic Settings:
     2.4 GHz:
-      Wireless Mode: AP
+      Radio Mode: AP
     5 GHz:
-      Wireless Mode: AP
+      Radio Mode: AP
 Services:
   Services:
     Services Management:

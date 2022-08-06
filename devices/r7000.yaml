@@ -1,12 +1,12 @@
 Wireless:
   Basic Settings:
     Wireless Interface wl0 [2.4 GHz TurboQAM]:
-      Wireless Network Mode: Mixed
-      Wireless Channel: 1 - 2.412 GHz
+      Network Mode: Mixed
+      Channel: 1 - 2.412 GHz
       Channel Width: Wide HT40 (40 MHz)
       Extension Channel: upper
     Wireless Interface wl1 [5 GHz/802.11ac]:
-      Wireless Network Mode: Mixed
+      Network Mode: Mixed
 Administration:
   Commands:
     Diagnostics:
