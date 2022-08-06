@@ -7,6 +7,7 @@ At the time of writing, all DD-WRT devices are running DD-WRT v3.0-r49392 std (0
 ## Features
  - DynDNS (Namecheap) - Updates a DNS record to that of the WAN IP, even if the IP changees. Largely used to ensure that the VPN is always accessible
  - OpenVPN server providing full network access to the local network
+ - Wireless repeater bridge connected to the main gateway via a dedicated Backhaul network
 
 ## Usage
 [`roles`](roles)/[`devices`](devices) contain settings that will need to be changed from the defaults when configuring from a fresh DD-WRT install. Instructions on which files to use are provided in the Devices section. Secret values are listed in [`secrets.yaml`](secrets.yaml), which is encrypted with [Mozilla SOPS](https://github.com/mozilla/sops)

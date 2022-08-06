@@ -9,9 +9,9 @@ Setup:
 Wireless:
   Basic Settings:
     2.4 GHz:
-      Wireless Network Name (SSID): ${24gSSID}
+      Service Set Identifier (SSID): ${24gSSID}
     5 GHz:
-      Wireless Network Name (SSID): ${5gSSID}
+      Service Set Identifier (SSID): ${5gSSID}
   Wireless Security:
     Wireless Security *:
       Physical Interface *:
