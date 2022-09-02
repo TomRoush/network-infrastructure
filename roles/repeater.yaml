@@ -18,4 +18,5 @@ Administration:
     Keep Alive Management:
       WDS / Connection Watchdog:
         Enable Watchdog: Enable
+        Interval: 300
         IP Addresses: 192.168.1.1
