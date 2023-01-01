@@ -25,8 +25,8 @@ Wireless:
   Basic Settings:
     5 GHz:
       Virtual Interfaces:
-        Wireless Interface [5 GHz/802.11ac]:
-          Service Set Identifier (SSID): ${5gSSID}-Backhaul
+        Wireless Interface [2.4 GHz TurboQAM]:
+          Service Set Identifier (SSID): ${24gSSID}-Backhaul
           SSID Broadcast: Disable
 Services:
   Services:
