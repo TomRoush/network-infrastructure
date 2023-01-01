@@ -4,8 +4,10 @@ Setup:
       WAN Connection Type: Disabled
     Network Setup:
       Router IP:
-        Local IP Address: 192.168.1.4/16
+        Local IP Address: 192.168.1.4/18
         Gateway: 192.168.1.1
+      Dynamic Host Configuration Protocal (DHCP):
+        DHCP Server: Disable
   Advanced Routing:
     Advanced Routing:
       Operating Mode:

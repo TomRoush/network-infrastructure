@@ -2,7 +2,7 @@
 Documentation on the configuration of the networking devices for my home network.
 
 # DD-WRT Configuration
-At the time of writing, all DD-WRT devices are running DD-WRT v3.0-r50012 std (08/31/22).
+At the time of writing, all DD-WRT devices are running DD-WRT v3.0-r50963 std (11/28/22).
 
 ## Features
  - DynDNS (Namecheap) - Updates a DNS record to that of the WAN IP, even if the IP changees. Largely used to ensure that the VPN is always accessible

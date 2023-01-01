@@ -10,9 +10,9 @@ Wireless:
       Network Mode: Mixed
       Channel: 6 - 2.437 GHz
       Channel Width: Wide HT40 (40 MHz)
-      Extension Channel: upper
+      Extension Channel: lower
     Wireless Interface wl2 [5 GHz/802.11ac]:
       Network Mode: AC/N-Mixed
       Channel: 40 - 5.200 GHz
       Channel Width: Wide HT40 (40 MHz)
-      Extension Channel: Lower
+      Extension Channel: lower
