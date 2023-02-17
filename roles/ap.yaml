@@ -8,16 +8,6 @@ Setup:
         Gateway: 192.168.1.1
       Dynamic Host Configuration Protocal (DHCP):
         DHCP Server: Disable
-  Advanced Routing:
-    Advanced Routing:
-      Operating Mode:
-        Operating Mode: Router
-Wireless:
-  Basic Settings:
-    2.4 GHz:
-      Radio Mode: AP
-    5 GHz:
-      Radio Mode: AP
 Services:
   Services:
     Services Management:
